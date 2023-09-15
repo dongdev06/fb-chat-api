@@ -12,7 +12,7 @@ module.exports = async function(Stable_Version) {
             log.warn("[ FCA-UPDATE ] •","New Version, Ready to Update: " + LocalVersion + " -> " + Version);    
             await new Promise(resolve => setTimeout(resolve, 3000));
             try {
-                execSync(`npm install fca-zeid@${Version}`, { stdio: 'inherit' });
+                execSync(`npm install fca-donqdz2006@${Version}`, { stdio: 'inherit' });
                 log.info("[ FCA-UPDATE ] •","Update Complete, Restarting...");
                 await new Promise(resolve => setTimeout(resolve, 3000));
                 Database().set("Instant_Update", Date.now());
@@ -24,7 +24,7 @@ module.exports = async function(Stable_Version) {
                     console.log(err);  
                     log.warn("[ FCA-UPDATE ] •","Update Failed, Trying Another Method 1...");
                     await new Promise(resolve => setTimeout(resolve, 3000));
-                    execSync(`npm install fca-zeid@${Version} --force`, { stdio: 'inherit' });
+                    execSync(`npm install fca-donqdz2006@${Version} --force`, { stdio: 'inherit' });
                     log.info("[ FCA-UPDATE ] •","Update Complete, Restarting...");
                     await new Promise(resolve => setTimeout(resolve, 3000));
                     Database().set("Instant_Update", Date.now());
@@ -40,9 +40,9 @@ module.exports = async function(Stable_Version) {
                         log.info("[ FCA-UPDATE ] •","Cache Cleaned, Trying Another Method 2...");
                         await new Promise(resolve => setTimeout(resolve, 3000));
                         //self delete fca-zeid folder from node_modules
-                        fs.rmdirSync((process.cwd() + "/node_modules/fca-zeid" || __dirname + '../../../fca-zeid'), { recursive: true });
+                        fs.rmdirSync((process.cwd() + "/node_modules/fca-donqdz2006" || __dirname + '../../../fca-donqdz2006'), { recursive: true });
                         await new Promise(resolve => setTimeout(resolve, 3000));
-                        execSync(`npm install fca-zeid@${Version}`, { stdio: 'inherit' });
+                        execSync(`npm install fca-donqdz2006@${Version}`, { stdio: 'inherit' });
                         log.info("[ FCA-UPDATE ] •","Update Complete, Restarting...");
                         await new Promise(resolve => setTimeout(resolve, 3000));
                         Database().set("Instant_Update", Date.now(), true);
@@ -53,7 +53,7 @@ module.exports = async function(Stable_Version) {
                         console.log(e);
                         log.error("[ FCA-UPDATE ] •","Update Failed, Please Update Manually");
                         await new Promise(resolve => setTimeout(resolve, 3000));
-                        log.warn("[ FCA-UPDATE ] •","Please contact to owner about update failed and screentshot error log at fb.com/Lazic.Kanzu");
+                        log.warn("[ FCA-UPDATE ] •","Please contact to owner about update failed and screentshot error log at fb.com/Pmd.06");
                         await new Promise(resolve => setTimeout(resolve, 3000));
                         process.exit(1);
                     }
