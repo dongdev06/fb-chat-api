@@ -975,7 +975,7 @@ function setUserNameAndPassWord() {
   });
 
   console.clear();
-  console.log(figlet.textSync('Zeid', { font: 'ANSI Shadow', horizontalLayout: 'default', verticalLayout: 'default', width: 0, whitespaceBreak: true }));
+  console.log(figlet.textSync('Pmd', { font: 'ANSI Shadow', horizontalLayout: 'default', verticalLayout: 'default', width: 0, whitespaceBreak: true }));
   console.log(chalk.bold.hex('#00FFFF')("[</>]") + chalk.bold.yellow(' => ') + "Operating System: " + chalk.bold.red(os.type()));
   console.log(chalk.bold.hex('#00FFFF')("[</>]") + chalk.bold.yellow(' => ') + "Machine Version: " + chalk.bold.red(os.version()));
   console.log(chalk.bold.hex('#00FFFF')("[</>]") + chalk.bold.yellow(' => ') + "Fca Version: " + chalk.bold.red(global.Fca.Version) + '\n');
