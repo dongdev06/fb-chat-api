@@ -6,12 +6,12 @@
 
 Nếu Bạn Muốn Sử Dụng, Hãy Tải Nó Bằng Cách:
 ```bash
-npm i fca-donq-dev
+npm i fca-donqdz2006
 
 ```
 or
 ```bash
-npm install fca-donq-dev
+npm install fca-donqdz2006
 ```
 
 ## Tự Nghiên Cứu
