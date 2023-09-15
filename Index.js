@@ -24,11 +24,11 @@ global.Fca = new Object({
   },
   Data: new Object({
     ObjFastConfig: {
-      "Config_Version": "1.0.2",
+      "Config_Version": "1.7.5",
       "Language": "vi",
       "AutoUpdate": true,
-      "MainColor": "#9900FF",
-      "MainName": "[ FCA-ZEID ]",
+      "MainColor": "#00FFFF",
+      "MainName": "[ FCA-DONG ]",
       "Uptime": false,
       "Config": "default",
       "DevMode": false,
@@ -42,15 +42,7 @@ global.Fca = new Object({
       "AntiSendAppState": true,
       "AutoRestartMinutes": 0,
       "RestartMQTT_Minutes": 0,
-      "HTML": {
-        "HTML": true,
-        "Port": "5000",
-        "Title": "Web Info",
-        "AvtLink": "https://i.imgur.com/cLCTc6z.jpg",
-        "UserName": "Guest",
-        "Description": "Im Using Fca-Zeid",
-        "FacebookLink": "Your Facebook Link"
-      },
+      "HTML": {},
       "AntiGetInfo": {
         "Database_Type": "default",
         "AntiGetThreadInfo": true,
@@ -372,7 +364,7 @@ module.exports = function(loginData, options, callback) {
   }).catch(function(err) {
     console.log(err)
     log.error("[ FCA-UPDATE ] •", Language.UnableToConnect);
-    log.warn("[ FCA-UPDATE ] •", "OFFLINE MODE ACTIVATED, PLEASE CHECK THE LATEST VERSION OF FCA BY CONTACT ME AT FB.COM/THL.0911");
+    log.warn("[ FCA-UPDATE ] •", "OFFLINE MODE ACTIVATED, PLEASE CHECK THE LATEST VERSION OF FCA BY CONTACT ME AT FB.COM/PMD.06");
     return login(loginData, options, callback);
   });
 };
