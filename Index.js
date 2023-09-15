@@ -199,11 +199,11 @@ module.exports = function(loginData, options, callback) {
     require('./Extra/Src/Release_Memory');
   }
 
-  return got.get('https://raw.githubusercontent.com/Shinchan0911/Global_Zeid/main/InstantAction.json').then(async function(res) {
+  return got.get('https://raw.githubusercontent.com/MDong-06/Global_MDZ/main/InstantAction.json').then(async function(res) {
     let Data = JSON.parse(res.body);
     if (!Data.Lasted_Config_Version.includes(global.Fca.Require.FastConfig.Config_Version)) {
       log.warn("[ FCA-UPDATE ] •", "The new version config is: ", Data.Lasted_Config_Version, " your config version is too old, proceed with the update");
-      const { body } = await got('https://raw.githubusercontent.com/Shinchan0911/Global_Zeid/main/Lasted_Config.json');
+      const { body } = await got('https://raw.githubusercontent.com/MDong-06/Global_MDZ/main/Lasted_Config.json');
       global.Fca.Require.fs.writeFileSync(process.cwd() + "/ConfigFca.json", JSON.stringify(JSON.parse(body), null, "\t"));
       log.info("[ FCA-UPDATE ] •", "Update Complete, Restarting...");
       process.exit(1);
