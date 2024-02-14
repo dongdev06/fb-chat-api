@@ -1,5 +1,5 @@
 {
-  "name": "fca-dongdev2006",
+  "name": "fb-chat-api",
   "version": "1.7.5",
   "description": "Facebook chat API that doesn't rely on XMPP.",
   "main": "Index.js",
